@@ -13,61 +13,68 @@
 
   
   
-  <div class="container my-5">
+  <form action="#" id="myForm" method="get">
+    <div class="container my-5">
 
-    <div class="row mb-3">
-
-      <div class="col">
-        <div class="form-group">
-
-          <label for="name-user" class="form-label">Nome passeggero</label>
-          <input type="text" class="form-control" id="name-user" placeholder="Inserisci il tuo nome">
-
+      <div class="row mb-3">
+  
+        <div class="col">
+          <div class="form-group">
+  
+            <label for="name-user" class="form-label">Nome passeggero</label>
+            <input type="text" class="form-control" id="name-user" placeholder="Inserisci il tuo nome">
+  
+          </div>
+        </div>
+      
+  
+        <div class="col">
+          <div class="form-group">
+  
+            <label for="km-trip" class="form-label">Distanza da percorrere in km</label>
+            <input type="text" class="form-control" id="km-trip" placeholder="Inserisci la lunghezza del percorso in km">
+  
+          </div>
+        </div>
+  
+  
+        <div class="col">
+          <div class="form-group">
+            <label for="age-user" class="form-label">Seleziona la tua fascia d'età</label>
+  
+            <select class="form-select" id="age-user" aria-label="Default select example">
+            
+            <option selected>Scegli</option>
+            <option value="1">Minorenne</option>
+            <option value="2">Maggiorenne</option>
+            <option value="3">Over 65</option>
+            </select>
+          </div>
+        </div>
+  
+        <div class="container d-flex justify-content-center my-3">
+          <button type="submit" id="button-create" class="btn btn-primary me-2">Salva</button>
+          <button type="reset" id="button-reset" class="btn btn-outline-danger">Svuota</button>
         </div>
       </div>
-    
-
-      <div class="col">
-        <div class="form-group">
-
-          <label for="km-trip" class="form-label">Distanza da percorrere in km</label>
-          <input type="text" class="form-control" id="km-trip" placeholder="Inserisci la lunghezza del percorso in km">
-
+  
+  
+      <div class="row">
+        <div class="col">
+          <div class="ticket-one" id="outputNiceTicket">
+            
+            <p id="outputName"></p>
+            
+            <p id="outputCarriage"></p>
+  
+            <p id="outputPrice"></p>
+  
+          </div>
         </div>
       </div>
-
-
-      <div class="col">
-        <div class="form-group">
-          <label for="age-user" class="form-label">Seleziona la tua fascia d'età</label>
-
-          <select class="form-select" id="age-user" aria-label="Default select example">
-          
-          <option selected>Scegli</option>
-          <option value="1">Minorenne</option>
-          <option value="2">Maggiorenne</option>
-          <option value="3">Over 65</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="container d-flex justify-content-center my-3">
-        <button type="submit" id="button-create" class="btn btn-primary me-2">Salva</button>
-        <button type="reset" id="button-reset" class="btn btn-outline-danger">Svuota</button>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col">
-        
-        <p id="outputName"></p>
-        <p id="outputPrice"></p>
-
-      </div>
-    </div>
-
-  </div>  
+  
+    </div>  
+  </form>
 
     
 
