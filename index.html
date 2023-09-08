@@ -11,7 +11,30 @@
 <body>
   
   <div class="container my-5">
+    <div class="row">
+      
+    <div class="col mb-3">
+      <label for="nameUser" class="form-label">Nome passeggero</label>
+      <input type="text" class="form-control" id="nameUser" placeholder="Inserisci il tuo nome">
+    </div>
+
+    <div class="col mb-3">
+      <label for="kmTrip" class="form-label">Distanza da percorrere in km</label>
+      <input type="text" class="form-control" id="kmTrip" placeholder="Inserisci la lunghezza del percorso in km">
+    </div>
     
+    <div class="col mb-3">
+      <label for="ageUser" class="form-label">Seleziona la tua fascia d'età</label>
+
+      <select class="form-select" id="ageUser" aria-label="Default select example">
+        
+        <option selected>Scegli</option>
+        <option value="1">Minorenne</option>
+        <option value="2">Maggiorenne</option>
+        <option value="3">Over 65</option>
+      </select>
+    </div>
+    </div>
   </div>
 
   <script src="./js/script.js"></script>
