@@ -44,6 +44,9 @@ function ticketCreation(){
   outputCarriage.innerHTML = carriage;
   outputNumberTicket.innerHTML = numberTicket;
 
+  document.getElementById('buy-btn').innerHTML = `
+  <button class="btn btn-info">Acquista Biglietto</button>
+  `;
 }
 
 
