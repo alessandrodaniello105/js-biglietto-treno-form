@@ -10,32 +10,58 @@
 </head>
 <body>
   
-  <div class="container my-5">
-    <div class="row">
+
+  
+  
+  <form action="#" id="ticket" method="get">
+    <div class="container my-5">
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="name-user" class="form-label">Nome passeggero</label>
+            <input type="text" class="form-control" id="name-user" placeholder="Inserisci il tuo nome">
+          </div>
+        </div>
       
-    <div class="col mb-3">
-      <label for="name-user" class="form-label">Nome passeggero</label>
-      <input type="text" class="form-control" id="name-tser" placeholder="Inserisci il tuo nome">
-    </div>
 
-    <div class="col mb-3">
-      <label for="km-trip" class="form-label">Distanza da percorrere in km</label>
-      <input type="text" class="form-control" id="km-trip" placeholder="Inserisci la lunghezza del percorso in km">
-    </div>
-    
-    <div class="col mb-3">
-      <label for="ageUser" class="form-label">Seleziona la tua fascia d'età</label>
+        <div class="col">
+          <label for="km-trip" class="form-label">Distanza da percorrere in km</label>
+          <input type="text" class="form-control" id="km-trip" placeholder="Inserisci la lunghezza del percorso in km">
+        </div>
 
-      <select class="form-select" id="age-user" aria-label="Default select example">
+
+        <div class="col">
+          <label for="age-user" class="form-label">Seleziona la tua fascia d'età</label>
+
+          <select class="form-select" id="age-user" aria-label="Default select example">
+          
+          <option selected>Scegli</option>
+          <option value="1">Minorenne</option>
+          <option value="2">Maggiorenne</option>
+          <option value="3">Over 65</option>
+        </select>
+        </div>
+
         
-        <option selected>Scegli</option>
-        <option value="1">Minorenne</option>
-        <option value="2">Maggiorenne</option>
-        <option value="3">Over 65</option>
-      </select>
+      </div>
+      <button type="submit" id="button-create" class="btn btn-primary">Salva</button>
+      <button type="reset" id="button-reset" form="ticket" class="btn btn-outline-danger">Svuota</button>
     </div>
+  </form>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        
+        <p id="outputName"></p>
+
+
+      </div>
     </div>
-  </div>
+  </div>  
+
+    
 
   <script src="./js/script.js"></script>
 </body>
