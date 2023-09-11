@@ -11,13 +11,13 @@
 <body>
   
 
-  
-  
-  <form action="#" id="myForm" method="get">
+  <!-- <form action="#" id="myForm" method="get"> -->
     <div class="container my-5">
 
+      <!-- INSERISCI I DATI -->
       <div class="row mb-3">
   
+        <!-- NAME INPUT -->
         <div class="col">
           <div class="form-group">
   
@@ -26,8 +26,9 @@
   
           </div>
         </div>
+        <!-- /NAME INPUT -->
       
-  
+        <!-- DISTANCE INPUT -->
         <div class="col">
           <div class="form-group">
   
@@ -36,8 +37,9 @@
   
           </div>
         </div>
-  
-  
+        <!-- /DISTANCE INPUT -->
+
+        <!-- AGE INPUT SELECTION -->
         <div class="col">
           <div class="form-group">
             <label for="age-user" class="form-label">Seleziona la tua fascia d'età</label>
@@ -51,14 +53,21 @@
             </select>
           </div>
         </div>
-  
+        <!-- /AGE INPUT SELECTION -->
+
+        <!-- BUTTONS -->
         <div class="container d-flex justify-content-center my-3">
           <button type="submit" id="button-create" class="btn btn-primary me-2">Salva</button>
-          <button type="reset" id="button-reset" class="btn btn-outline-danger">Svuota</button>
+          <button type="reset" id="button-reset" form="myForm" class="btn btn-outline-danger">Svuota</button>
         </div>
+        <!-- /BUTTONS -->
+
       </div>
-  
-  
+
+      <!-- /INSERISCI I DATI -->
+
+
+      <!-- STAMPA BIGLIETTO -->
       <div class="row ticket-one">
 
         <div class="col-4 col-left">
@@ -70,6 +79,10 @@
         </div>
 
         <div class="col col-right d-flex">
+            
+          <div class="col-2">
+          <p id="outputOfferta"></p>
+          </div>
             
           <div class="col-2">
           <p id="outputCarriage"></p>
@@ -90,12 +103,13 @@
         </div>
       
       </div>
+      <!-- /STAMPA BIGLIETTO -->
+
   
     </div>  
-  </form>
+  <!-- </form> -->
 
-    
-
+  
   <script src="./js/script.js"></script>
 </body>
 </html>
